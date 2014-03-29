@@ -2,12 +2,13 @@ __author__ = 'pwentrys'
 
 from flask import Flask, render_template, url_for
 import urllib2
+from config import LISTEN_IP, LISTEN_PORT
 
 app = Flask(__name__)
 
 #localhost:1234 information setting for how to access site
-LISTEN_IP = '0.0.0.0'
-LISTEN_PORT = 1234
+#LISTEN_IP = '0.0.0.0'
+#LISTEN_PORT = 1234
 
 #route for index...when you go to localhost:1234 -> brings you to html
 @app.route('/')
