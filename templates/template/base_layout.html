@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<title>{% block title %}{% endblock %} - El Blasto Corps</title>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<style type="text/css">
+body,td,th {
+    color: #D8D8D8;
+}
+p{font-family:"Blair ITC", Times, serif;}
+a:link {color:#D8D8D8;}      /* unvisited link */
+a:visited {color:#D8D8D8;}  /* visited link */
+a:hover {color:#D8D8D8;}  /* mouse over link */
+a:active {color:#D8D8D8;}  /* selected link */
+body {
+    background-color: #222222;
+}
+</style>
+
+</head>
+
+<body>
+<center>
+<table width="1662" border="0">
+  <tr>
+    <td colspan="3" align="center"><img src="/static/Blasto_Banner.jpg">
+    </tr>
+
+
+  <tr cellpadding="10">
+    <td width="15%" height="53" align="center"></td>
+    <td width="70%" align="center"></td>
+    <td width="15%" align="center"></td>
+  </tr>
+
+
+  <tr><td style="background:url(/static/menu_head_foot.jpg) repeat center"></td></tr>
+  <tr cellpadding="10">
+    <td style="background:url(/static/menu_bg.jpg) repeat center" height="120%" align="left" valign="top"><table width="90%" border="0" align="right">
+      <tr>
+        <td>Main<br>
+            - <a href="http://www.google.com">Home</a>
+        </td>
+      </tr>
+        <tr><td></td></tr>
+      <tr>
+        <td>Tools<br>
+            - <a href="http://www.google.com">The Googles</a><br>(Vertica DT Check)<br>
+        </td>
+      </tr>
+
+    </table></td>
+    <td align="left" valign="top">{% block body %}{% endblock %}</td>
+
+
+    <td height="120%" align="left" valign="top"><table width="90%" border="0" align="right">
+      <tr>
+        <td><br>
+        <br>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+
+    <td height="20" colspan="3" align="center"><br><br><br><br><br><br>El Blasto Corporations<br><a href="mailto:pwentrys@riotgames.com">PWentrys@RiotGames.com</a></td>
+    </tr>
+</table>
+</center>
+</html>
+

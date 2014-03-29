@@ -1,0 +1,5 @@
+{% extends "template/base_layout.html" %}
+{% block title %}Andromeda{% endblock %}
+    {{ super() }}
+    <meta http-equiv="refresh" content="60">
+{% block body %}{{ page_data|safe }}{% endblock %}
